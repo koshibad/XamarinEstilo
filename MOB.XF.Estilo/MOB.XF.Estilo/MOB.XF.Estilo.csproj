@@ -38,6 +38,7 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="EntryValidarNumerico.cs" />
     <Compile Include="EstiloDinamicoView.xaml.cs">
       <DependentUpon>EstiloDinamicoView.xaml</DependentUpon>
     </Compile>
@@ -48,6 +49,9 @@
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TriggerView.xaml.cs">
+      <DependentUpon>TriggerView.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="MainPage.xaml">
@@ -85,6 +89,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="EstiloDinamicoView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="TriggerView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
